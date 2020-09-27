@@ -37,20 +37,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.google.android.material:material:1.2.1'
-    // https://mvnrepository.com/artifact/org.dkpro.similarity/dkpro-similarity-algorithms-api-asl
-//    implementation (group: 'org.dkpro.similarity', name: 'dkpro-similarity-algorithms-api-asl', version: '2.2.0'){
-//        exclude group: 'commons-collections', module: 'commons-collections'
-//        exclude group: 'commons-logging', module: 'commons-logging'
-//        exclude group: 'junit', module: 'junit'
-//        exclude group: 'com.sleepycat', module: 'je'
-//    }
-    // https://mvnrepository.com/artifact/org.dkpro.similarity/dkpro-similarity-algorithms-lexical-asl
-//    implementation (group: 'org.dkpro.similarity', name: 'dkpro-similarity-algorithms-lexical-asl', version: '2.3.0'){
-////        exclude group: 'commons-collections', module: 'commons-collections'
-//        exclude group: 'commons-logging', module: 'commons-logging'
-////        exclude group: 'junit', module: 'junit'
-//        exclude group: 'com.sleepycat', module: 'je'
-//    }
+
     implementation files('libs/dkpro-similarity-algorithms-lexical-asl-2.3.0.jar')
     implementation files('libs/dkpro-similarity-algorithms-api-asl-2.3.0.jar')
 

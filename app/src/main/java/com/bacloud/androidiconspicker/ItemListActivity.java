@@ -42,6 +42,9 @@ public class ItemListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        int idx = getResources().getIdentifier("ic_android_black_24dp", "drawable",  getPackageName());
+        System.out.println("idx");
+        System.out.println(idx);
         TextSimilarityMeasure measure = new WordNGramJaccardMeasure(3);    // Use word trigrams
         String[] tokens1 = "This is a short example text .".split(" ");
         String[] tokens2 = "A short example text could look like that .".split(" ");
@@ -60,6 +63,7 @@ public class ItemListActivity extends AppCompatActivity {
         toolbar.setTitle(getTitle());
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setImageResource(idx);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

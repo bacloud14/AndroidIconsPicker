@@ -42,20 +42,20 @@ public class ItemDetailFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        TextSimilarityMeasure measure = new WordNGramJaccardMeasure(3);    // Use word trigrams
+//        TextSimilarityMeasure measure = new WordNGramJaccardMeasure(3);    // Use word trigrams
+//
+//        String[] tokens1 = "This is a short example text .".split(" ");
+//        String[] tokens2 = "A short example text could look like that .".split(" ");
+//        System.out.println("score");
+//        double score = 0;
+//        try {
+//            score = measure.getSimilarity(tokens1, tokens2);
+//            System.out.println(score);
+//        } catch (SimilarityException e) {
+//            e.printStackTrace();
+//        }
 
-        String[] tokens1 = "This is a short example text .".split(" ");
-        String[] tokens2 = "A short example text could look like that .".split(" ");
-        System.out.println("score");
-        double score = 0;
-        try {
-            score = measure.getSimilarity(tokens1, tokens2);
-            System.out.println(score);
-        } catch (SimilarityException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println("Similarity: " + score);
+//        System.out.println("Similarity: " + score);
         if (getArguments().containsKey(ARG_ITEM_ID)) {
             // Load the dummy content specified by the fragment
             // arguments. In a real-world scenario, use a Loader
